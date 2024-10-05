@@ -32,32 +32,36 @@ export const HERO_CONTENT = {
 export const PROJECTS = [
   {
     name: "Ivatan Artchive",
-    description: "Live stream management tool for content creators",
+    description:
+      "A digital space dedicated to showcase the vibrant and unique artworks of Ivatan artists.",
     image: projects1,
     link: "https://github.com/your-github/streamerzz",
   },
   {
     name: "Pokedex",
-    description: "Track your meals and calories with smart AI suggestions",
+    description:
+      "Discover everything you need to know about your favorite Pokémon with our Pokédex! ",
     image: projects2,
     link: "https://github.com/your-github/nutritrack",
   },
   {
     name: "Personal Blog",
-    description: "A platform for hair regrowth solutions powered by science",
+    description:
+      " From technology and web development to personal experiences and insights",
     image: projects3,
     link: "https://github.com/your-github/hairrevive",
   },
   {
     name: "BSC Enrollment System",
     description:
-      "Interactive dashboard for developers to track coding activity",
+      "Efficiently manage student registrations and data, easy-to-use system designed for seamless enrollment.",
     image: projects4,
     link: "https://github.com/your-github/devdeck",
   },
   {
     name: "To-Do List",
-    description: "Fitness social network to connect athletes and trainers",
+    description:
+      "A simple and efficient tool to help you manage your tasks and stay organized.",
     image: projects5,
     link: "https://github.com/your-github/fitconnect",
   },
@@ -65,8 +69,8 @@ export const PROJECTS = [
 
 export const ABOUT_CONTENT = {
   paragraphs: [
-    "I am a dedicated frontend developer with a passion for building modern web applications that are both functional and aesthetically pleasing. Over the years, I have worked on numerous projects ranging from single-page applications to complex multi-tiered systems, always ensuring high performance and seamless user experiences.",
-    "I specialize in using technologies like React, Next.js, and Tailwind CSS to create responsive and scalable interfaces. My focus is on writing clean, maintainable code while collaborating with cross-functional teams to deliver projects that meet both business goals and user needs. I thrive in environments that challenge me to continuously learn and grow.",
+    "I am a passionate frontend developer currently in my third year of college, where I first discovered my love for programming. Inspired by my twin brother, I began my journey in web development and quickly became captivated by the art of building modern, responsive applications. Since then, I have worked on several projects, each reflecting my affinity for minimalistic and clean design.",
+    "While still early in this journey, I am dedicated to honing my skills with technologies like React.js and Tailwind CSS to create efficient and scalable interfaces. I have also gained experience using PHP and MySQL to build basic systems for academic projects. My focus is on writing clean, maintainable code, and I am always eager to learn and grow through new challenges.",
   ],
 };
 

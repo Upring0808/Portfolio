@@ -32,7 +32,7 @@ const scrollToWorkSection = () => {
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center">
-      <div className="relative z-10 w-full max-w-6xl flex flex-col md:flex-row items-center justify-between p-4 md:p-8">
+      <div className="relative z-10 w-full max-w-6xl flex flex-col md:flex-row items-center justify-between p-4 md:p-8 mt-9">
         {/* Text Section */}
         <motion.div
           className="w-full md:w-1/2 p-4 md:p-8 text-white"

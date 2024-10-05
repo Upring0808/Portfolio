@@ -17,7 +17,7 @@ const About = () => {
       </h1>
 
       <div className="h-1 w-20 mb-8 bg-white"></div>
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto -mb-32">
         {ABOUT_CONTENT.paragraphs.map((paragraph, index) => (
           <motion.p
             key={index}
