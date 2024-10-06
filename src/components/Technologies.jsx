@@ -29,7 +29,7 @@ const itemVariants = {
 
 const Technologies = () => {
   return (
-    <section className="px-6 py-10 mb-3" id="technologies">
+    <section className="px-6 py-10 mb-5" id="technologies">
       <h2 className="text-4xl pt-10 -mt-10 md:text-6xl font-medium tracking-tight mb-8">
         Technologies
       </h2>
