@@ -29,13 +29,13 @@ const itemVariants = {
 
 const Technologies = () => {
   return (
-    <section className="px-6 py-10 mt-20" id="technologies">
-      <h2 className="text-4xl mt-20 md:text-6xl font-medium tracking-tight mb-10">
+    <section className="px-6 py-10 mb-32" id="technologies">
+      <h2 className="text-4xl pt-10 -mt-10 md:text-6xl font-medium tracking-tight mb-8">
         Technologies
       </h2>
       <div className="h-1 w-20 mb-8 bg-white"></div>
       <motion.div
-        className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8"
+        className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
@@ -44,7 +44,7 @@ const Technologies = () => {
         {techStack.map((tech, index) => (
           <motion.div
             key={index}
-            className="flex flex-col items-center space-y-4"
+            className="flex flex-col items-center space-y-6"
             variants={itemVariants}
           >
             <div className="text-6xl">{tech.icon}</div>

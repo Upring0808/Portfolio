@@ -28,7 +28,7 @@ const Projects = () => {
         Projects
       </h1>
       <div className="h-1 w-20 mb-8 bg-white"></div>
-      {/* Reduce the gap between project cards */}
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {PROJECTS.map((project, index) => (
           <motion.div

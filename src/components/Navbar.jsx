@@ -19,16 +19,32 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (e, href) => {
+    e.preventDefault();
     setMenuOpen(false);
+
+    const targetId = href.substring(1); // Remove the '#' from the href
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const yOffset = -80; // Adjust this value based on your header height
+      const y =
+        targetElement.getBoundingClientRect().top +
+        window.pageYOffset +
+        yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
+    } else {
+      console.error(`Target element with id "${targetId}" not found`);
+    }
   };
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 px-4 py-4">
       <nav
-        className={`max-w-7xl mx-auto transition-all duration-300 ${scrolled} backdrop-blur-md ${
-          menuOpen ? "rounded-t-2xl" : "rounded-full"
-        }`}
+        className={`max-w-7xl mx-auto transition-all duration-500 ${
+          scrolled ? "bg-gray-900/50" : ""
+        } backdrop-blur-md ${menuOpen ? "rounded-t-2xl" : "rounded-full"}`}
       >
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
@@ -47,6 +63,7 @@ const Navbar = () => {
                 <a
                   href={link.href}
                   key={index}
+                  onClick={(e) => handleLinkClick(e, link.href)}
                   className="text-white hover:text-stone-300 transition duration-300 text-sm uppercase tracking-wider font-medium"
                 >
                   {link.label}
@@ -74,16 +91,16 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`md:hidden overflow-hidden transition-all duration-1000 ease-in-out ${
           menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        } backdrop-blur-md rounded-b-2xl max-w-7xl mx-auto`}
+        } backdrop-blur-md rounded-b-2xl max-w-7xl mx-auto bg-gray-900/50`}
       >
         <div className="px-4 py-2 space-y-1">
           {LINKS.map((link, index) => (
             <a
               href={link.href}
               key={index}
-              onClick={handleLinkClick}
+              onClick={(e) => handleLinkClick(e, link.href)}
               className="text-white hover:bg-stone-700/50 block px-3 py-2 rounded-md text-base font-medium transition duration-300"
             >
               {link.label}

@@ -17,11 +17,11 @@ const About = () => {
       </h1>
 
       <div className="h-1 w-20 mb-8 bg-white"></div>
-      <div className="max-w-4xl mx-auto -mb-32">
+      <div className="max-w-4xl mx-auto mb-0">
         {ABOUT_CONTENT.paragraphs.map((paragraph, index) => (
           <motion.p
             key={index}
-            className="text-xl md:text-2xl lg:text-4xl mb-10
+            className="text-xl md:text-2xl lg:text-4xl mb-16
         leading-relaxed"
             initial="hidden"
             whileInView="visible"

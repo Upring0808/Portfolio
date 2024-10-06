@@ -25,7 +25,7 @@ export const HERO_CONTENT = {
   introduction:
     "I’m Marvin Geoffrey B. Domingo, a creative frontend developer, crafting immersive and intuitive web experiences.",
   description:
-    "I’m currently helping businesses bring their visions to life through interactive digital solutions.",
+    "I'm a third-year college student studying frontend development. I enjoy creating clean, responsive websites using React, JavaScript, PHP, MySQL, HTML, CSS, and Tailwind CSS. I'm always exploring new technologies and finding better ways to bring ideas to life.",
   resumeLinkText: "See More ->",
 };
 
@@ -47,7 +47,7 @@ export const PROJECTS = [
   {
     name: "Personal Blog",
     description:
-      " From technology and web development to personal experiences and insights",
+      " From technology and web development to personal experiences and insights.",
     image: projects3,
     link: "https://github.com/your-github/hairrevive",
   },
@@ -69,40 +69,40 @@ export const PROJECTS = [
 
 export const ABOUT_CONTENT = {
   paragraphs: [
-    "I am a passionate frontend developer currently in my third year of college, where I first discovered my love for programming. Inspired by my twin brother, I began my journey in web development and quickly became captivated by the art of building modern, responsive applications. Since then, I have worked on several projects, each reflecting my affinity for minimalistic and clean design.",
-    "While still early in this journey, I am dedicated to honing my skills with technologies like React.js and Tailwind CSS to create efficient and scalable interfaces. I have also gained experience using PHP and MySQL to build basic systems for academic projects. My focus is on writing clean, maintainable code, and I am always eager to learn and grow through new challenges.",
+    "I'm a frontend developer in my third year of college, where I first discovered my passion for programming. Inspired by my twin brother, I started learning web development and got hooked on creating modern, responsive applications. I've worked on several projects, focusing on minimalistic and clean design.",
+    "Though I'm still early in my journey as a developer, I'm committed to improving my skills with technologies like React.js and Tailwind CSS to create efficient and scalable user interfaces. I enjoy diving into new projects where I can apply these tools to solve real-world problems. I've also gained experience using PHP and MySQL for academic projects, where I've built basic systems like enrollment system and a simple blog. These experiences taught me the importance of backend functionality and how it complements frontend design.",
   ],
 };
 
 export const EXPERIENCES = [
   {
-    yearRange: "2023 — Now",
-    title: "Senior Frontend Engineer at TechCorp",
-    location: "Paris, France",
+    yearRange: "2024 — Now",
+    title: "Frontend Developer",
+    location: "Lorem Ipsum ",
     description: [
-      "Leading the development of scalable frontend architecture for enterprise-level applications.",
-      "Collaborating with cross-functional teams to deliver high-quality, user-centric solutions.",
-      "Driving innovation through continuous improvements in performance and UI/UX design.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     ],
   },
   {
-    yearRange: "2021 — 2023",
-    title: "Frontend Engineer at Startup Inc.",
-    location: "Remote",
+    yearRange: "2023 — 2024",
+    title: "Frontend Developer ",
+    location: "Lorem Ipsum",
     description: [
-      "Built dynamic, responsive, and accessible web applications using React, Next.js, and Tailwind CSS.",
-      "Spearheaded frontend optimization efforts, resulting in a 40% performance boost.",
-      "Mentored junior developers and led internal frontend workshops.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     ],
   },
   {
-    yearRange: "2018 — 2021",
-    title: "Frontend Developer at Creative Solutions",
-    location: "London, UK",
+    yearRange: "2022 — 2023",
+    title: "Frontend Developer",
+    location: "Lorem Ipsum London",
     description: [
-      "Developed and maintained user interfaces for high-traffic websites.",
-      "Worked closely with designers to implement pixel-perfect designs.",
-      "Optimized websites for SEO and performance, resulting in a 30% increase in traffic.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+      "Curabitur pretium tincidunt lacus, ut dapibus ligula tincidunt et.",
     ],
   },
 ];
@@ -166,7 +166,7 @@ export const CONTACT_CONTENT = {
     },
     {
       platform: "GitHub",
-      url: "https://github.com/yourprofile",
+      url: "https://github.com/Upring0808",
       ariaLabel: "View my GitHub profile",
       icon: "RiGithubFill",
     },

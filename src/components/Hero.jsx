@@ -21,7 +21,6 @@ const imageVariants = {
   },
 };
 
-// Function to scroll smoothly to the #work section
 const scrollToWorkSection = () => {
   const workSection = document.querySelector("#work");
   if (workSection) {
@@ -45,22 +44,26 @@ const Hero = () => {
             variants={textVariants}
           >
             {HERO_CONTENT.greeting}
+            <motion.h3
+              className="text-2xl font-light   md:text-3xl lg:text-4xl font-medium text-gray-300"
+              variants={textVariants}
+            >
+              Front-End Developer {/* Emphasize the title */}
+            </motion.h3>
           </motion.h1>
 
-          <motion.p
-            className="text-xl md:text-2xl lg:text-3xl mb-6 leading-relaxed"
+          {/* <motion.p
+            className="text-lg md:text-xl lg:text-2xl  leading-relaxed"
             variants={textVariants}
           >
             {HERO_CONTENT.introduction}
-          </motion.p>
-
+          </motion.p> */}
           <motion.p
             className="text-lg md:text-xl lg:text-2xl mb-8 leading-relaxed"
             variants={textVariants}
           >
             {HERO_CONTENT.description}
           </motion.p>
-
           <motion.button
             className="bg-white text-gray-900 px-6 py-3 lg:px-8 lg:py-4 inline-block rounded-full shadow-md transition-transform transform hover:scale-105 cursor-pointer"
             onClick={scrollToWorkSection}
