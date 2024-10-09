@@ -83,7 +83,7 @@ const Hero = () => {
           <img
             src={jason}
             alt="Marvin Domingo"
-            className="rounded-3xl w-[340px] h-[340px] md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover shadow-lg"
+            className="rounded-lg w-[350px] h-[390px] md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover shadow-lg"
           />
         </motion.div>
       </div>
