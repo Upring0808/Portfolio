@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { HERO_CONTENT } from "../constants";
-import jason from "../assets/pring.jpg";
+import jason from "../assets/upringy.JPG";
 
 // Animation variants for text and images
 const textVariants = {
