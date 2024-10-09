@@ -22,6 +22,7 @@ const Projects = () => {
       },
     },
   };
+
   return (
     <section className="px-6 py-10" id="work">
       <h1 className="text-4xl md:text-6xl font-medium tracking-tight mb-10">
@@ -33,7 +34,7 @@ const Projects = () => {
         {PROJECTS.map((project, index) => (
           <motion.div
             key={index}
-            className="relative rounded-lg overflow-hidden h-[500px] transition transform -mb-14"
+            className="relative rounded-lg overflow-hidden h-[550px] transition transform -mb-14"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -44,18 +45,31 @@ const Projects = () => {
               alt={project.name}
               className="w-full h-58 inset-0 absolute object-cover transition-opacity duration-300"
             />
-            <div className="relative z-20 p-6 flex flex-col justify-between h-[420px] bg-black/30 text-white">
+            <div className="relative z-20 p-6  flex flex-col  justify-between h-[450px] bg-black/30 text-white">
               <h2 className="text-2xl font-medium mb-4">{project.name}</h2>
               <div className="flex flex-col justify-between">
                 <p className="mb-4 flex-grow text-2xl">{project.description}</p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener norefferer"
-                  className="bg-white text-stone-900 rounded-full py-2 px-2 w-32 text-sm hover:bg-gray-100 text-center"
-                >
-                  View on Github
-                </a>
+
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener norefferer"
+                    className="bg-white text-stone-900 rounded-full py-2 px-2 w-32 text-sm hover:bg-gray-100 text-center"
+                  >
+                    Click to view
+                  </a>
+                ) : (
+                  <div className="text-yellow-500 font-semibold">
+                    Coming Soon
+                  </div>
+                )}
+
+                {project.noteText && (
+                  <div className="italic flex justify-center rounded-xl bg-yellow-500 text-black font-semibold p-2 mt-4">
+                    {project.noteText}
+                  </div>
+                )}
               </div>
             </div>
           </motion.div>

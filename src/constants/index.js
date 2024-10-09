@@ -35,35 +35,36 @@ export const PROJECTS = [
     description:
       "A digital space dedicated to showcase the vibrant and unique artworks of Ivatan artists.",
     image: projects1,
-    link: "https://github.com/your-github/streamerzz",
+    link: "http://marvindomingo.onlinewebshop.net/home.php",
   },
   {
     name: "Pokedex",
     description:
       "Discover everything you need to know about your favorite Pokémon with our Pokédex! ",
     image: projects2,
-    link: "https://github.com/your-github/nutritrack",
+    link: "https://pokedex-pi-livid.vercel.app",
   },
   {
     name: "Personal Blog",
     description:
       " From technology and web development to personal experiences and insights.",
     image: projects3,
-    link: "https://github.com/your-github/hairrevive",
+    link: "",
+    noteText: "Not yet Uploaded",
   },
   {
     name: "BSC Enrollment System",
     description:
       "Efficiently manage student registrations and data, easy-to-use system designed for seamless enrollment.",
     image: projects4,
-    link: "https://github.com/your-github/devdeck",
+    noteText: "Not yet Uploaded",
   },
   {
     name: "To-Do List",
     description:
       "A simple and efficient tool to help you manage your tasks and stay organized.",
     image: projects5,
-    link: "https://github.com/your-github/fitconnect",
+    noteText: "Not yet Uploaded",
   },
 ];
 

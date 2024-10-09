@@ -23,25 +23,24 @@ const Experience = () => {
 
   return (
     <section className="px-4 md:px-6   py-10 mb-20 -mt-3 " id="experience">
+      {/* Section title */}
+      <div className=" mb-8">
+        <h2 className="text-4xl   md:text-6xl font-medium tracking-tight mb-10 ">
+          Work Experience
+        </h2>
+        <div className="h-1 w-20 bg-white mb-8"></div>
+      </div>
+
       {/* Warning or note section */}
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="flex justify-center items-center -mt-[15px] mb-6 p-4 mt-20 bg-yellow-300/80 text-black rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300"
+        className="flex justify-center items-center -mt-[5px] mb-6 p-4 mt-20 bg-yellow-300/80 text-black rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300"
       >
         <AlertTriangle size={20} className="mr-2" />
         <span className="font-semibold">Future Growth Zone</span>
       </motion.div>
-
-      {/* Section title */}
-      <div className="flex flex-col items-center text-center mb-8">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight">
-          Work Experience
-        </h2>
-        <div className="h-1 w-16 sm:w-20 mt-4 bg-white"></div>
-      </div>
-
       {/* Experience content */}
       <motion.div
         className="space-y-10"
