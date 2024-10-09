@@ -154,9 +154,9 @@ export const TESTIMONIALS = [
 ];
 
 export const CONTACT_CONTENT = {
-  headline: "LET'S WORK ON SOMETHING GREAT",
+  headline: "LET'S TURN YOUR VISION INTO REALITY!",
   description:
-    "I'm excited to collaborate on projects that push boundaries and create meaningful impact. Let's build something innovative and exceptional together.",
+    "I’m excited to work on projects that make a real impact. Let’s build something great together and push creative boundaries.",
   email: "domingomarvingeoffrey@gmail.com",
   socialLinks: [
     {

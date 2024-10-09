@@ -5,19 +5,19 @@ import jason from "../assets/upringy.JPG";
 // Animation variants for text and images
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 1.5, ease: "easeOut" } },
 };
 
 const containerVariants = {
   hidden: { opacity: 1 },
-  visible: { opacity: 1, y: 1, transition: { staggerChildren: 0.3 } },
+  visible: { opacity: 1, y: 1, transition: { staggerChildren: 0.5 } },
 };
 
 const imageVariants = {
   hidden: { clipPath: "inset(0 50% 0 50%)" },
   visible: {
     clipPath: "inset(0 0% 0 0%)",
-    transition: { duration: 1.2, ease: "easeInOut" },
+    transition: { duration: 1.5, ease: "easeInOut" },
   },
 };
 
@@ -45,19 +45,13 @@ const Hero = () => {
           >
             {HERO_CONTENT.greeting}
             <motion.h3
-              className="text-2xl font-light   md:text-3xl lg:text-4xl font-medium text-gray-300"
+              className="text-2xl font-light md:text-3xl lg:text-4xl font-medium text-gray-300"
               variants={textVariants}
             >
               Front-End Developer {/* Emphasize the title */}
             </motion.h3>
           </motion.h1>
 
-          {/* <motion.p
-            className="text-lg md:text-xl lg:text-2xl  leading-relaxed"
-            variants={textVariants}
-          >
-            {HERO_CONTENT.introduction}
-          </motion.p> */}
           <motion.p
             className="text-lg md:text-xl lg:text-2xl mb-8 leading-relaxed"
             variants={textVariants}

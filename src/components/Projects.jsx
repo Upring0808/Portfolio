@@ -2,21 +2,20 @@ import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
 const Projects = () => {
+  // Motion variants for a smooth, professional entrance
   const projectVariants = {
     hidden: {
       opacity: 0,
-      scale: 0.8,
-      y: 50,
+      scale: 0.95,
+      y: 20, // Slight upward movement
     },
     visible: {
       opacity: 1,
       scale: 1,
       y: 0,
       transition: {
-        duration: 0.6,
-        type: "spring",
-        ease: "easeOut",
-        bounce: 0.4,
+        duration: 0.6, // Smooth, slightly longer duration for elegance
+        ease: [0.25, 0.46, 0.45, 0.94], // Smooth cubic bezier easing
       },
     },
   };
@@ -32,10 +31,10 @@ const Projects = () => {
         {PROJECTS.map((project, index) => (
           <motion.div
             key={index}
-            className="relative rounded-2xl overflow-hidden shadow-lg transition transform hover:scale-105 duration-300"
+            className="relative rounded-2xl overflow-hidden shadow-lg transition transform hover:scale-105 duration-500" // Smoother hover effect
             initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
+            whileInView="visible" // Only animates when in view
+            viewport={{ once: true, amount: 0.5 }} // Trigger when 50% of the card is in view
             variants={projectVariants}
           >
             {/* Image at the top */}
