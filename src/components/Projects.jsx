@@ -2,20 +2,20 @@ import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
 const Projects = () => {
-  // Motion variants for a smooth, professional entrance
+  // Motion variants for a smoother and more creative entrance
   const projectVariants = {
     hidden: {
       opacity: 0,
-      scale: 0.95,
-      y: 20, // Slight upward movement
+      scale: 0.9, // Slight scale down for a subtle pop effect
+      y: 30, // Smooth vertical movement for entrance
     },
     visible: {
       opacity: 1,
       scale: 1,
       y: 0,
       transition: {
-        duration: 0.6, // Smooth, slightly longer duration for elegance
-        ease: [0.25, 0.46, 0.45, 0.94], // Smooth cubic bezier easing
+        duration: 1, // Extended duration for smoother effect
+        ease: [0.42, 0, 0.58, 1], // Ease-in-out cubic-bezier for smoother transitions
       },
     },
   };
@@ -31,10 +31,10 @@ const Projects = () => {
         {PROJECTS.map((project, index) => (
           <motion.div
             key={index}
-            className="relative rounded-2xl overflow-hidden shadow-lg transition transform hover:scale-105 duration-500" // Smoother hover effect
+            className="relative rounded-2xl overflow-hidden shadow-lg transition-transform transform hover:scale-105 duration-500" // GPU-optimized hover scaling
             initial="hidden"
-            whileInView="visible" // Only animates when in view
-            viewport={{ once: true, amount: 0.5 }} // Trigger when 50% of the card is in view
+            whileInView="visible" // Animates only when in view
+            viewport={{ once: true, amount: 0.5 }} // Trigger animation when 50% in view
             variants={projectVariants}
           >
             {/* Image at the top */}
@@ -53,7 +53,7 @@ const Projects = () => {
                 <a
                   href={project.link}
                   target="_blank"
-                  rel="noopener norefferer"
+                  rel="noopener noreferrer"
                   className="bg-yellow-500 text-black rounded-full py-2 px-4 text-sm hover:bg-yellow-600 text-center"
                 >
                   Click to view
